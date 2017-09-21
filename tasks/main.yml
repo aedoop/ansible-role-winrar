@@ -1,0 +1,10 @@
+---
+# tasks file for winrar
+
+- name: Set dir_info,pkg_info fact in {{ ansible_distribution }} by {{ mode }} install
+  set_fact:
+    dir_info: "{{ dirs_info[ansible_os_family] }}"
+    pkg_info: "{{ packages_info[version][ansible_os_family] }}"
+
+- name: Include Windows-{{ mode }}.yml in {{ ansible_distribution }} by {{ mode }} install
+  include: Window-{{ mode }}.yml

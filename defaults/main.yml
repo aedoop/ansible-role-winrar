@@ -1,0 +1,6 @@
+---
+# defaults file for winrar
+
+id: winrar
+version: 5.50
+mode: pull

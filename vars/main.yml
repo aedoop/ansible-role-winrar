@@ -1,0 +1,12 @@
+---
+# vars file for winrar
+
+dirs_info:
+  Windows:
+    tmp: C:\tmp
+
+packages_info:
+  5.50:
+    Windows:
+      file: winrar.install.5.50.nupkg
+      pull: ftp://10.0.250.100/pub/winrar/winrar.install.5.50.nupkg
